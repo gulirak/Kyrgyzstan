@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width: 100%;
+    position: relative;
+}
+.card{
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    transition: 0.4s ease-in-out;
+    flex: 0.7;
+    /*flex values,
+    aigul flower,
+    z-index value*/
+}
+.card img{
+height: 100vh;
+}
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text {
+    position: absolute;
+    top: 100px;
+    left: 29%;
+    z-index: 2;
+    font-size: 70px;
+    color:rgb(54, 40, 40);
+    font-family: 'Dancing Script', cursive;
+    font-weight:  bold;
+    
+
+}
